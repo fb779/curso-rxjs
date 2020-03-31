@@ -1,4 +1,5 @@
-import { Observer, of, from } from 'rxjs';
+import { Observer, fromEvent } from 'rxjs';
+import { tap, first, map } from 'rxjs/operators';
 
 const observer:  Observer<any> = {
     next: value => console.log('next:', value),
